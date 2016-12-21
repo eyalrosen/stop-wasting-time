@@ -10,6 +10,8 @@ function hideNewsfeed() {
     }
 }
 
+// in case we go back to newsfeed
 setInterval(hideNewsfeed, 500);
 
+// on startup
 hideNewsfeed();
