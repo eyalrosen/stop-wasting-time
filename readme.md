@@ -1,0 +1,1 @@
+Chrome extension that hides the newsfeed and notification icon
