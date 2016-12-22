@@ -2,9 +2,11 @@
 var btn = document.getElementsByClassName('_2n_9');
 btn[2].style.display = 'none';
 
+
 function hideNewsfeed() {
     // hide newsfeed
-    if (window.location.href == 'https://www.facebook.com/') {
+    var url = window.location.href;
+    if (url == 'https://www.facebook.com/' || url.indexOf('https://www.facebook.com/?') > -1) {
         var contentArea = document.getElementById('contentArea');
         contentArea.innerHTML = '';
     }
