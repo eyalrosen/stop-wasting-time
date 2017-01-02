@@ -35,10 +35,11 @@ var hideNumberFromTitle = function() {
 
 // hide newsfeed - on startup and in case we go back to newsfeed
 var hideNewsfeed = function() {
+    var domain = 'https://www.facebook.com/';
     var contentArea = document.getElementById('contentArea');
     if (contentArea && contentArea.style.display != 'none') {
         var url = window.location.href;
-        if (url == 'https://www.facebook.com/' || url.indexOf('https://www.facebook.com/?') > -1) {
+        if (url == domain || url.indexOf(domain + '?') > -1 || url.indexOf(domain + '#') > -1) {
             contentArea.innerHTML = '';
         }
     }
